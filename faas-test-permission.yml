@@ -1,0 +1,10 @@
+provider:
+  name: faas
+  #gateway: http://localhost:8080
+  gateway: https://faas.kenev.net
+
+functions:
+  faas-test-permission:
+    lang: node
+    handler: ./faas-test-permission
+    image: kenfdev/faas-test-permission
